@@ -10,34 +10,33 @@ The reference is Haml's most complete API.
 - run: `haml input.haml output.html`
 - documentation: `haml --help`
 - use with Rails: `gem "haml"`
+- instance methods and helpers are available:
 
-
-
-- instance methods and helpers are available
-
-```ruby
-# file: app/controllers/movies_controller.rb
-class  MoviesController < ApplicationController
-  def index
-    @title = "Teen Wolf"
+  ```ruby
+  # file: app/controllers/movies_controller.rb
+  class  MoviesController < ApplicationController
+    def index
+      @title = "Teen Wolf"
+    end
   end
-end
-```
+  ```
 
-```haml
-/ file: app/views/movies/index.html.haml
+  ```haml
+  / file: app/views/movies/index.html.haml
 
-#content
-  .title
-    %h1= @title
-    = link_to "Home", home_url
-```
+  #content
+    .title
+      %h1= @title
+      = link_to "Home", home_url
+  ```
 
-```html
-<div id="content">
-  <div class="title">
-    <h1>Teen Wolf</h1>
-    <a href="/">Home</a>
+  ```html
+  <div id="content">
+    <div class="title">
+      <h1>Teen Wolf</h1>
+      <a href="/">Home</a>
+    </div>
   </div>
-</div>
-```
+  ```
+
+
