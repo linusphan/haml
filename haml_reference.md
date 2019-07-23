@@ -69,3 +69,59 @@ The reference is Haml's most complete API.
 ---
 
 ### Plain Text
+
+Not interpreted text:
+
+```haml
+/ haml
+%gee
+  %whiz
+    Wow this is cool!
+```
+
+```html
+<!-- html -->
+<gee>
+  <whiz>
+    Wow this is cool!
+  </whiz>
+</gee>
+```
+
+Plain HTML:
+
+```haml
+/ haml
+%p
+  <div id="blah">Blah!</div>
+```
+
+```html
+<!-- html -->
+<p>
+  <div id="blah">Blah!</div>
+</p>
+```
+
+Escaping:
+
+```haml
+/ haml
+%title
+  = @title
+  \= @title
+```
+
+```html
+<!-- html -->
+<title>
+  MyPage
+  = @title
+</title>
+```
+
+---
+
+### HTML Elements
+
+
