@@ -11,7 +11,6 @@ The reference is Haml's most complete API.
 - documentation: `haml --help`
 - use with Rails: `gem "haml"`
 - instance methods and helpers are available:
-
   ```ruby
   # file: app/controllers/movies_controller.rb
   class  MoviesController < ApplicationController
@@ -23,7 +22,6 @@ The reference is Haml's most complete API.
 
   ```haml
   / file: app/views/movies/index.html.haml
-
   #content
     .title
       %h1= @title
@@ -31,6 +29,7 @@ The reference is Haml's most complete API.
   ```
 
   ```html
+  <!-- html -->
   <div id="content">
     <div class="title">
       <h1>Teen Wolf</h1>
