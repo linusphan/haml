@@ -280,7 +280,7 @@ end
 methods before hash literal
 
 ```haml
-%sandwhich{hash1, hash2, :delicious => 'true'}
+%sandwhich{hash1, hash2, :delicious => 'true'}/
 ```
 
 ```html
