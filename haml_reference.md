@@ -21,7 +21,7 @@ The reference is Haml's most complete API.
   ```
 
   ```haml
-  / file: app/views/movies/index.html.haml
+  -# file: app/views/movies/index.html.haml
   #content
     .title
       %h1= @title
@@ -73,7 +73,7 @@ The reference is Haml's most complete API.
 Not interpreted text:
 
 ```haml
-/ haml
+-# haml
 %gee
   %whiz
     Wow this is cool!
@@ -91,7 +91,7 @@ Not interpreted text:
 Plain HTML:
 
 ```haml
-/ haml
+-# haml
 %p
   <div id="blah">Blah!</div>
 ```
@@ -106,7 +106,7 @@ Plain HTML:
 Escaping:
 
 ```haml
-/ haml
+-# haml
 %title
   = @title
   \= @title
@@ -127,7 +127,7 @@ Escaping:
 Element name: `%`
 
 ```haml
-/ haml
+-# haml
 %one
   %two
     %three Hey there
